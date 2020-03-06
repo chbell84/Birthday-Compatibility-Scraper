@@ -33,6 +33,7 @@ The program prints the scores to standard out as in the below example. You can p
         08/04/1964 , 02/18/1969 , 704 , -579 , 125
         08/04/1964 , 02/18/1977 , 1184 , -534 , 650
         08/04/1964 , 05/19/1931 , 631 , -115 , 516
+        ...
 
 ### Dependencies
 BirthdayCompatibility2.py is written in Python 3.5 and uses the following dependancies
