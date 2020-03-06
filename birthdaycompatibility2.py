@@ -46,16 +46,21 @@ def main(argv):
     #print("The program is starting\n")
     year = timedelta(days=365)
     day = timedelta(days=1)
-    if len(argv)==4:
+    if len(argv)>=4:
         d1 = datetime.date(int(argv[1]),int(argv[2]),int(argv[3]))
+        age = datetime.date.today() - d1
+        if len(argv)==5:
+            youngAge = age - year*float(argv[4])
+            oldAge = age + year*float(argv[4])
+        else:
+            youngAge = age/2 + year*7
+            oldAge = (age - year*7)*2
+        youngDate = datetime.date.today() - youngAge
     else:
         print("Need birthdate: YYYY MM DD")
         return
-    age = datetime.date.today() - d1
-    youngAge = age/2 + year*7
-    youngDate = datetime.date.today() - youngAge
-    oldAge = (age - year*7)*2
-    oldDate = datetime.date.today() - oldAge
+    
+    #oldDate = datetime.date.today() - oldAge
     timeSpan = oldAge - youngAge
     timeSpan = timeSpan.days
     partner_dates = set()
