@@ -5,11 +5,14 @@ This program is the product of bordom and the desire to reflect on old relations
 
 At some point I wondered, if these site are providing numerical scores telling you how compatible you are with people who have a particular birthday, it should be possible to calculate the birthdate of person with whom you are most compatibile... or at least rank your age appropriate options. ...so I wrote this scraper to submit a request (like [this one][5]) testing the compatibliity one birthday against the birthdays within a dating appropriate age range. I've decided to use the formula of Your `age/2+7` to determine the low end and `(Your Age-7)*2` on the high end.
 
+Special thanks to the author if [this][6] article which helped me figure out asyncio.
+
 [1]: http://astro.cafeastrology.com/astro.php?page=comp2f   "Cafe Astrology Birthday Compatibilty Tool"
 [2]: https://www.biorhythmonline.com/birthday-compatibility/   "Biorhythm Compatibility Calculator"
 [3]: https://www.thecalculator.co/love/Birthday-Compatibility-Test-492.html  "The Calculator: Birthday Compatibility Test"
 [4]: https://www.biolovematch.com   "BioLoveMatch"
 [5]: http://astro.cafeastrology.com/astro.php?page=comp2f&d1day=4&d1month=8&d1year=1964&d2day=17&d2month=1&d2year=1964  "Barak and Michelle Birthday Compatibility"
+[6]: https://pawelmhm.github.io/asyncio/python/aiohttp/2016/04/22/asyncio-aiohttp.html "Making 1 million requests with python-aiohttp"
 
 ## Usage
 
