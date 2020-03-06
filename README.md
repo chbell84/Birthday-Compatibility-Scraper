@@ -5,7 +5,7 @@ This program is the product of bordom and the desire to reflect on old relations
 
 At some point I wondered, if these site are providing numerical scores telling you how compatible you are with people who have a particular birthday, it should be possible to calculate the birthdate of person with whom you are most compatibile... or at least rank your age appropriate options. ...so I wrote this scraper to submit a request (like [this one][5]) testing the compatibliity one birthday against the birthdays within a dating appropriate age range. I've decided to use the formula of Your `age/2+7` to determine the low end and `(Your Age-7)*2` on the high end.
 
-Special thanks to the author if [this][6] article which helped me figure out asyncio.
+Special thanks to the author of [this][6] article which helped me figure out asyncio.
 
 [1]: http://astro.cafeastrology.com/astro.php?page=comp2f   "Cafe Astrology Birthday Compatibilty Tool"
 [2]: https://www.biorhythmonline.com/birthday-compatibility/   "Biorhythm Compatibility Calculator"
