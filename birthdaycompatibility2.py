@@ -1,6 +1,5 @@
 #!/usr/bin/python3.5
 from html.parser import HTMLParser
-import urllib.request
 import re
 import time
 import datetime
@@ -9,9 +8,7 @@ import sys
 from aiohttp import ClientSession
 import asyncio
 from datetime import timedelta
-#from sets import Set
 
-#http://astro.cafeastrology.com/astro.php?page=comp2f&d1day=25&d1month=8&d1year=1984&d2day=5&d2month=3&d2year=1988
 def print_scores(scores, partner_dates):
     regex = re.compile('<td align=\"right\"> (\d+)</td><td align=\"right\"\>\s(-*\d+)<\/td><td align=\"right\">\s(-*\d+)<\/td><\/tr><\/table>')
     #scores = regex.search(rawhtml)
